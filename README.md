@@ -1,16 +1,16 @@
-# :penguin Linux User Management Lab - TechCorp Solutions
+# :penguin: Linux User Management Lab - TechCorp Solutions
 
-## :pushpin User Management and File Permissions Lab
+## :pushpin: User Management and File Permissions Lab
 
 ---
 
-## :direct hit Objective
+## :dart: Objective
 This lab demonstrates practical Linux system administration by creating users, managing groups and assigning file permisssions for two departments: Marketing and IT.
 It ensures secure file access, privacy of individual users and collaborative group work using Linux permission structures.
 
 ---
 
-## :hammer and wrench Tools Used
+## :hammer_and_wrench: Tools Used
 
 - Kali Linux
 - Linux Terminal (Bash)
@@ -19,7 +19,7 @@ It ensures secure file access, privacy of individual users and collaborative gro
 
 ---
 
-# :desktop computer PART 1: Marketing Department (Private Files)
+# :desktop_computer: PART 1: Marketing Department (Private Files)
 
 ### Scenario
 The Marketing department has five new employees. Each employee requires a personal workspace file that only they can access.
