@@ -58,7 +58,7 @@ sudo touch /home/shared/marketing/carol_report.txt
 sudo touch /home/shared/marketing/david_report.txt
 sudo touch /home/shared/marketing/emma_report.txt
 ```
-
+![Marketing Files](screenshots/04-marketing-files.png)
 
 ## Step 5: Assign Ownership to Users
 ```bash
@@ -68,13 +68,17 @@ sudo chown carol_m:marketing /home/shared/marketing/carol_report.txt
 sudo chown david_m:marketing /home/shared/marketing/david_report.txt
 sudo chown emma_m:marketing /home/shared/marketing/emma_report.txt
 ```
-
+![Marketing Ownership](screenshots/05-marketing-ownership.png)
 
 ## Step 6: Set Private Permissions (700)
 ```bash
-sudo chmod 700 /home/shared/marketing/*.txt
+sudo chmod 700 /home/shared/marketing/alice_report.txt
+sudo useradd -m -G itdept -s /bin/bash/bob_report.txt
+sudo useradd -m -G itdept -s /bin/bash/carol_report.txt
+sudo useradd -m -G itdept -s /bin/bash/david_report.txt
+sudo useradd -m -G itdept -s /bin/bash/emma_report.txt
 ```
-
+![Marketing Permissions](screenshots/06-marketing-permissions.png)
 
 ---
 
@@ -89,7 +93,7 @@ The IT department needs a shared project file where all team members can collabo
 ```bash
 sudo groupadd itdept
 ```
-
+![IT Group](screenshots/07-it-group.png)
 
 ## Step 2: Create IT Users
 ```bash
@@ -99,7 +103,7 @@ sudo useradd -m -G itdept -s /bin/bash henry_it
 sudo useradd -m -G itdept -s /bin/bash iris_it
 sudo useradd -m -G itdept -s /bin/bash jack_it
 ```
-
+![IT Users](screenshots/08-it-users.png)
 
 ## Step 3: Create IT Shared Directory
 ```bash
@@ -107,25 +111,25 @@ sudo mkdir -p /home/shared/itdept
 sudo chown root:itdept /home/shared/itdept
 sudo chmod 770 /home/shared/itdept
 ```
-
+![IT Directory](screenshots/09-it-directory.png)
 
 ## Step 4: Create Shared Project File
 ```bash
 sudo touch /home/shared/itdept/project_specs.txt
 ```
-
+![IT File](screenshots/10-it-file.png)
 
 ## Step 5: Assign Group Ownership
 ```bash
 sudo chown :itdept /home/shared/itdept/project_specs.txt
 ```
-
+![IT Ownership](screenshots/11-it-ownership.png)
 
 ## Step 6: Set Shared Permissions (770)
 ```bash
 sudo chmod 770 /home/shared/itdept/project_specs.txt
 ```
-
+![IT Permissions](screenshots/12-it-permissions.png)
 
 ---
 
@@ -135,26 +139,26 @@ sudo chmod 770 /home/shared/itdept/project_specs.txt
 ```bash
 cat /etc/passwd
 ```
-
+![Users Verification](screenshots/13-users-verification.png)
 
 ## Verify Groups
 ```bash
 getent group marketing
 getent group itdept
 ```
-
+![Groups Verification](screenshots/14-groups-verification.png)
 
 ## Verify Marketing Files and Permissions
 ```bash
-ls -l /home/shared/marketing/
+sudo  ls -l /home/shared/marketing/
 ```
-
+![Marketing Verification](screenshots/15-marketing-ls.png)
 
 ## Verify IT Files and Permissions
 ```bash
-ls -l /home/shared/itdept
+sudo ls -l /home/shared/itdept
 ```
-
+![IT Verification](screenshots/16-it-ls.png)
 
 ---
 
