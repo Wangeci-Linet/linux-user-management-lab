@@ -131,7 +131,7 @@ sudo chmod 770 /home/shared/itdept/project_specs.txt
 
 # :camera: Verification Commands
 
-## Verify
+## Verify Users
 ```bash
 cat /etc/passwd
 ```
