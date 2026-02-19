@@ -78,7 +78,7 @@ sudo chmod 700 /home/shared/marketing/*.txt
 
 ---
 
-# :desktop: PART 2: IT Department (Shared Collaborative File)
+# :desktop_computer: PART 2: IT Department (Shared Collaborative File)
 
 ### Scenario
 The IT department needs a shared project file where all team members can collaborate.
